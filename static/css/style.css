@@ -10,12 +10,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #FFE6E8;
+    background-color: #e5fcc2;
     margin-bottom: 0;
-    background-image: url('/static/images/fengshui.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
 }
 
 
@@ -26,26 +22,30 @@ div.container-fluid.navalert-container {
 }
 
 .navalert-container {
+    position: fixed;
     display: inline-flex;
     top: 0;
     left: 0;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     z-index: 1;
 }
 
 .navalert-container h1 {
-    font-family: "Italiana", sans-serif;
+    font-family: "Roboto", sans-serif;
     width: 30%;
-    color: #fdfbf0;
+    color: #e5fcc2;
 }
 
 .navbar {
     margin: 0;
     border: 0;
     width: 100%;
-    background-color: #817C68;
+    background-color: #45ada8;
+    color: #e5fcc2;
     z-index: 1000;
 }
+
 
 .navbar .navbar-toggler {
     border: 0;
@@ -55,24 +55,18 @@ div.container-fluid.navalert-container {
     font-weight: bold;
 }
 
+.navbar-nav .nav-link {
+    color: rgba(172, 20, 20, 0.5);
+}
+
 .active {
-    border-bottom: 1px solid #ffe6e8;
-}
-
-.test {
-    height: 200px;
-    width: 50%;
-    background-color: powderblue;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #817C68;
+    border-bottom: 1px solid #e5fcc2;
 }
 
 /*------------------------------- Footer */
 footer {
-    background-color: #817C68;
-    color: #ffe6e8;
+    background-color: #45ada8;
+    color: #e5fcc2;
     margin-top: 75vh;
     padding: 20px 0;
     height: auto;
@@ -98,12 +92,12 @@ footer {
     font-size: 1.5rem;
     line-height: 7px;
     text-align: center;
-    color: #ffe6e8;
-    background-color: #817C68;
+    color: #e5fcc2;
+    background-color: #45ada8;
     transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-    background: #7d8491;
-    color: #d6ffb7;
+    background: #073b4c;
+    color: #ffc6d9;
 }
