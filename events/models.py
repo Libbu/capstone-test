@@ -20,3 +20,9 @@ class Event(models.Model):
         
     def __str__(self):
         return f"{self.title} | created by {self.organiser}"
+
+class EventAttendance(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    event = models.ForeignKey(Event, on_delete=models.CASCADE)
+    def __str__(self):
+        return f"{self.user.username} - {self.event.title}"        
