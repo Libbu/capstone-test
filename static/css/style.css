@@ -1,7 +1,10 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&family=Italiana:wght@200;300;400;500;600;700&display=swap');
 
-/* General styling */
+
+/* General Styling */
+
+/*remove any default vertical white space from bootstrap classes */
 
 html,
 body {
@@ -11,11 +14,10 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: #e5fcc2;
-    margin-bottom: 0;
 }
 
+/*--------------------------------------------------------------------------------Navbar*/
 
-/* Navbar */
 div.container-fluid.navalert-container {
     width: 100%;
     padding: 0;
@@ -51,13 +53,12 @@ div.container-fluid.navalert-container {
     border: 0;
 }
 
-
 .navbar-brand {
     font-weight: bold;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(247 0 0 / 50%);
+    color: #e5fcc2;
 }
 
 
@@ -65,7 +66,8 @@ div.container-fluid.navalert-container {
     border-bottom: 1px solid #e5fcc2;
 }
 
-/*------------------------------- Footer */
+/*--------------------------------------------------------------------------------Footer*/
+
 footer {
     background-color: #45ada8;
     color: #e5fcc2;
@@ -102,4 +104,13 @@ footer {
 .social-links li a i:hover {
     background: #073b4c;
     color: #ffc6d9;
+}
+
+/*--------------------------------------------------------------------------------media query for smaller screens */
+
+@media screen and (max-width: 446px) {
+
+    .navalert-container h1 {
+        font-size: 1.5rem;
+    }
 }
