@@ -51,13 +51,15 @@ div.container-fluid.navalert-container {
     border: 0;
 }
 
+
 .navbar-brand {
     font-weight: bold;
 }
 
-.navbar-nav .nav-link {
-    color: rgba(172, 20, 20, 0.5);
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(247 0 0 / 50%);
 }
+
 
 .active {
     border-bottom: 1px solid #e5fcc2;
