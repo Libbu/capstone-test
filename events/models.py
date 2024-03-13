@@ -5,12 +5,11 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 
 class Event(models.Model):
-    event_id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=200)
     organiser = models.ForeignKey(User, on_delete=models.CASCADE, related_name="event_organiser")
     description = models.TextField()
     image = CloudinaryField('image', default='placeholder')
-    session_date_time = models.DateTimeField()
+    event_date_time = models.DateTimeField()
     created_on = models.DateTimeField(auto_now_add=True)
     location = models.CharField(max_length=200)
     max_attendees = models.PositiveIntegerField('Maximum Attendees', default=0)
