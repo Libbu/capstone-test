@@ -22,5 +22,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
     #path('events/', include('events.urls'), name = "events-urls"),
-    #path('', include('main.urls'), name="main-urls"),
+    path('', include('events.urls'), name = "events-urls"),
 ]
