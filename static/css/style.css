@@ -6,7 +6,6 @@
 
 /*remove any default vertical white space from bootstrap classes */
 
-html,
 body {
     width: 100%;
     margin: 0;
@@ -121,14 +120,14 @@ div.container-fluid.navalert-container {
 footer {
     background-color: #45ada8;
     color: #e5fcc2;
-    margin-top: 75vh;
-    padding: 20px 0;
-    height: auto;
+    min-height: 120px;
+    margin: 0;
 }
 
 #footer-details {
-    padding-top: 10px;
+    padding-top: 20px;
 }
+
 
 .social-links {
     display: flex;
