@@ -6,7 +6,7 @@ def home_view(request):
 
     return render(
         request,
-        "main/index.html")
+        "main/index.html",{'home': home})
 
 
 
