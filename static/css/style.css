@@ -66,6 +66,30 @@ div.container-fluid.navalert-container {
     border-bottom: 1px solid #e5fcc2;
 }
 
+/*--------------------------------------------------------------------------------Hero Image*/
+.hero-container {
+    height: 100vh;
+    width: 100%;
+    background: url("/static/images/hero-image.webp") no-repeat center center/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(10, 16, 13, 0.5);
+}
+
 /*--------------------------------------------------------------------------------Footer*/
 
 footer {
