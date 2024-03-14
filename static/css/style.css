@@ -87,7 +87,34 @@ div.container-fluid.navalert-container {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(10, 16, 13, 0.5);
+    background-color: rgba(10, 16, 13, 0.7);
+}
+
+/*--------------------------------------------------------------------------------Jumbotron*/
+
+.jumbotron {
+    background-color: transparent;
+
+}
+
+.jumbotron-header {
+    color: #e5fcc2;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+.block-divider--rose {
+    width: 50%;
+    height: 0.5rem;
+    border: 0;
+    border-radius: 25px;
+    background-color: #e5fcc2;
+}
+
+.jumbotron .lead {
+    margin: 25px 0;
+    color: #e5fcc2;
 }
 
 /*--------------------------------------------------------------------------------Footer*/
